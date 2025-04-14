@@ -1,19 +1,22 @@
 2025-April-14 update
 ====================
 
-This is a clone of the downloadable file at: 
-
-<https://pypi.org/project/mediawiki-parser/>
+This is a clone of the downloadable file at <https://pypi.org/project/mediawiki-parser/>
 
 Specifically, it's from this `tar.gz` file:
 `https://files.pythonhosted.org/packages/46/96/84d6cfc99aa21663af8ffccd6618481a0da21a4f18daba51c727f716ad42/mediawiki-parser-0.4.1.tar.gz`
 
-Other than this readme update, I've only made two commits:
+Other than changes to this readme (which I changed from an `.rst` file to an `.md` file), I've only made two commits:
 
 - the first is my ruff auto-linter changes.
 
-- the second is the fix to be able to install the `pijnu` dependency when installing via `uv`, here:
-  <https://github.com/Brown-University-Library/mediawiki-parser-0.4.1_with_pijnu_fix/commit/814df70f76dad81397248da97cb5ae7cbd06828a>
+- the second, [here](https://github.com/Brown-University-Library/mediawiki-parser-0.4.1_with_pijnu_fix/commit/814df70f76dad81397248da97cb5ae7cbd06828a), is the fix to be able to install the `pijnu` dependency when installing via [uv](https://github.com/astral-sh/uv). 
+  
+The purpose, to be able to install via uv, like (all on one line):
+
+```
+uv pip install git+ssh://git@github.com/Brown-University-Library/mediawiki-parser-0.4.1_with_pijnu_fix.git@516ca5e58b2efbbe3a91f8c526ddd8533c6c690c
+```
 
 Everything below, in this file, is unchanged.
 
